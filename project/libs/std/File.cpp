@@ -126,7 +126,6 @@ static value file_open( value name, value r ) {
     #ifdef NEKO_WINDOWS
 	    const wchar_t *fname = val_wstring(name);
 	    const wchar_t *mode = val_wstring(r);
-		printf("file_open name = %ws\n",fname);
 	#else
 	    const char *fname = val_string(name);
         const char *mode = val_string(r);
